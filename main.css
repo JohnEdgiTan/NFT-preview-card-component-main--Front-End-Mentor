@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'outfit', sans-serif;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 17.18em;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 0.8em;
+    padding: 1.2em;
+}
+
+.upperimage {
+    position: relative;
+}
+
+.upperimage div {
+    position: absolute;
+    background-color: hsl(178, 100%, 50%, 60%);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 0.8em;
+}
+
+.upperimage div svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.mainimage {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+}
+
+.header h4 {
+    color: white;
+    font-weight: 600;
+    margin-top: 1em;
+    margin-bottom: 0.6em;
+}
+
+.paragraph p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    font-size: 0.7em;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.cryptocurrency {
+    display: flex;
+    align-items: center;
+}
+
+.cryptocurrency p {
+    color: cyan;
+    margin-left: 0.5em;
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+}
+
+.countdown p {
+    color: hsl(215, 51%, 70%);
+    margin-left: 0.4em;
+}
+
+hr {
+    opacity: 0.1;
+    margin-bottom: 0.7em;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+}
+
+.avatar img {
+    width: 1.4em;
+    height: 1.4em;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 0.7em;
+}
+
+.avatarname {
+    display: flex;
+    font-size: 0.75em;
+}
+
+.creation {
+    margin-right: 0.3em;
+}
+
+.creation {
+    color: hsl(215, 51%, 70%);
+}
+
+.name {
+    color: white;
+}
+
+.attribution {
+    position: absolute;
+    font-size: 11px;
+    text-align: center;
+    margin-top: -1.5em;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* hovers */
+
+.header h4:hover,
+.name:hover {
+    color: cyan;
+    cursor: pointer;
+}
+
+.upperimage div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
